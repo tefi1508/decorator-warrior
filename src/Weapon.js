@@ -2,10 +2,6 @@ export class Weapon {
     constructor() {
         this.damage = 0;
     }
-
-    getDamage() {
-        return this.damage;
-    }
 }
 
 export class Arch extends Weapon{
@@ -13,11 +9,19 @@ export class Arch extends Weapon{
         super();
         this.damage = 5;
     }
+
+    calculateDamage(){
+        return this.damage;
+    }
 }
 
 export class Sword extends Weapon{
     constructor() {
         super();
         this.damage = 10;
+    }
+
+    calculateDamage(){
+        return this.damage;
     }
 }

@@ -7,7 +7,7 @@ export class WeaponDecorator extends Weapon {
     }
 
     calculateDamage() {
-        let totalDamage = this.damage + this.weapon.getDamage();
+        let totalDamage = this.damage + this.weapon.calculateDamage();
         return totalDamage;
     }
 }
